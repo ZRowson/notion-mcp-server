@@ -1,0 +1,14 @@
+[project]
+name = "notion-mcp-server"
+version = "0.1.0"
+description = "MCP server for Notion integration"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.2.0",
+    "notion-client>=2.2.1",
+    "python-dotenv>=1.0.0"
+]
+
+[project.scripts]
+notion-mcp = "notion_mcp.server:main"
